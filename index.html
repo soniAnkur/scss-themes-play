@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
       rel="stylesheet"
     />
+    <link rel="manifest" href="manifest.json" />
     <script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js"></script>
 
     <title>Metal Mayhem 💀</title>
@@ -47,6 +48,19 @@
           body.className = "dark";
           button.innerHTML = "Light mode";
         }
+      }
+
+      // serviceworker stuff
+      if ("serviceWorker" in navigator) {
+        console.log("Will the service worker register?");
+        navigator.serviceWorker
+          .register("service-worker.js")
+          .then(function(reg) {
+            console.log("Yes, it did.");
+          })
+          .catch(function(err) {
+            console.log("No it didn't. This happened:", err);
+          });
       }
     </script>
   </body>

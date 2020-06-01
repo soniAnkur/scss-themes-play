@@ -1,0 +1,15 @@
+{
+  "short_name": "Metal-Mayhem",
+  "name": "Metal-Mayhem",
+  "theme_color": "#4A90E2",
+  "background_color": "#F7F8F9",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "assets/icon.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    }
+  ],
+  "start_url": "/?utm_source=launcher"
+}
