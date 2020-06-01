@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.dark main {
+  color: #7c7e87;
+  background-color: #191e2d;
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.dark main .card--circle {
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem auto;
+  border-radius: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dark main .card--round-corner {
+  margin: 1rem auto;
+  border-radius: 1rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+.dark main .shadow--neomorphic {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 4px 4px 15px #07080c, -4px -4px 15px #2b344e;
+  box-shadow: 4px 4px 15px #07080c, -4px -4px 15px #2b344e;
+}
+
+.dark main .shadow--neomorphic:hover {
+  border: 1px solid #ee3254;
+}
+
+.dark main button {
+  padding: 1rem;
+  border-radius: 2rem;
+  color: #ee3254;
+  background-color: #191e2d;
+  border: 1px solid #ee3254;
+  margin: 1rem;
+  float: right;
+}
+
+.light main {
+  color: #44495b;
+  background-color: #c4cde9;
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.light main .card--circle {
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem auto;
+  border-radius: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.light main .card--round-corner {
+  margin: 1rem auto;
+  border-radius: 1rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+.light main .shadow--neomorphic {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 4px 4px 15px #9faedb, -4px -4px 15px #e9ecf7;
+  box-shadow: 4px 4px 15px #9faedb, -4px -4px 15px #e9ecf7;
+}
+
+.light main .shadow--neomorphic:hover {
+  border: 1px solid rgba(176, 105, 241, 0.79);
+}
+
+.light main button {
+  padding: 1rem;
+  border-radius: 2rem;
+  color: rgba(176, 105, 241, 0.79);
+  background-color: #c4cde9;
+  border: 1px solid rgba(176, 105, 241, 0.79);
+  margin: 1rem;
+  float: right;
+}
+/*# sourceMappingURL=style.css.map */

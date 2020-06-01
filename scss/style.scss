@@ -1,0 +1,65 @@
+@import "./resets/reset";
+@import "./variables/colors";
+@import "./mixins/mixins";
+@import "./mixins/themes";
+
+body {
+  font-family: $mm_font;
+}
+
+main {
+  @include themify($themes) {
+    // setupcolors
+    $text: themed("text");
+    $base: themed("base");
+    $brand: themed("brand");
+    // setup colors
+
+    color: $text;
+    background-color: $base;
+
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+
+    .card--circle {
+      width: 10rem;
+      height: 10rem;
+      margin: 1rem auto;
+      border-radius: 5rem;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card--round-corner {
+      margin: 1rem auto;
+      border-radius: 1rem;
+      width: 100%;
+      padding: 2rem;
+    }
+
+    .shadow--neomorphic {
+      transition: all 0.2s;
+      box-sizing: border-box;
+      @include box-shadow(
+        4px 4px 15px darken($base, 10%),
+        -4px -4px 15px lighten($base, 10%)
+      );
+      &:hover {
+        // @include box-shadow(none);
+        border: 1px solid $brand;
+      }
+    }
+
+    button {
+      padding: 1rem;
+      border-radius: 2rem;
+      color: $brand;
+      background-color: $base;
+      border: 1px solid $brand;
+      margin: 1rem;
+      float: right;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js"></script>
+
+    <title>Metal Mayhem 💀</title>
+  </head>
+  <body class="dark">
+    <main role="main">
+      <section>
+        <div class="card--round-corner shadow--neomorphic">
+          <div class="card--round-corner shadow--neomorphic">
+            <div class="card--round-corner shadow--neomorphic">
+              <div class="card--circle shadow--neomorphic">
+                hello
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        id="button"
+        class="card--round-corner shadow--neomorphic"
+        onclick="handleTheme(this);"
+      >
+        Light mode
+      </div>
+    </main>
+
+    <script>
+      const body = document.body;
+      const button = document.getElementById("button");
+
+      function handleTheme(el) {
+        if (body.className === "dark") {
+          body.className = "light";
+          button.innerHTML = "Dark mode";
+        } else {
+          body.className = "dark";
+          button.innerHTML = "Light mode";
+        }
+      }
+    </script>
+  </body>
+</html>
